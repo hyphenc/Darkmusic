@@ -81,7 +81,11 @@ public class MainActivity extends AbsSlidingMusicPanelActivity {
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT) {
             navigationView.setFitsSystemWindows(false); // for header to go below statusbar
         }
-
+        // ~
+        /*
+        added setTaskDescriptionColor(0);
+         */
+        setTaskDescriptionColor(0);
         setUpDrawerLayout();
 
         if (savedInstanceState == null) {

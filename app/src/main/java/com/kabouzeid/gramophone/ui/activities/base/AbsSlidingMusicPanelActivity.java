@@ -3,6 +3,7 @@ package com.kabouzeid.gramophone.ui.activities.base;
 import android.animation.ArgbEvaluator;
 import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.ColorInt;
@@ -167,7 +168,14 @@ public abstract class AbsSlidingMusicPanelActivity extends AbsMusicServiceActivi
 
     public void onPanelExpanded(View panel) {
         // setting fragments values
+        // ~
+        /*
+        original:
+
         int playerFragmentColor = playerFragment.getPaletteColor();
+
+        */
+        int playerFragmentColor = Color.BLACK;
         super.setLightStatusbar(false);
         super.setTaskDescriptionColor(playerFragmentColor);
         super.setNavigationbarColor(playerFragmentColor);
@@ -234,7 +242,14 @@ public abstract class AbsSlidingMusicPanelActivity extends AbsMusicServiceActivi
     @Override
     public void onPaletteColorChanged() {
         if (getPanelState() == SlidingUpPanelLayout.PanelState.EXPANDED) {
+            // ~
+            /*
+            original:
+
             int playerFragmentColor = playerFragment.getPaletteColor();
+
+            */
+            int playerFragmentColor = Color.BLACK;
             super.setTaskDescriptionColor(playerFragmentColor);
             animateNavigationBarColor(playerFragmentColor);
         }
@@ -250,7 +265,14 @@ public abstract class AbsSlidingMusicPanelActivity extends AbsMusicServiceActivi
 
     @Override
     public void setNavigationbarColor(int color) {
+        // ~
+        /*
+        original:
+
         this.navigationbarColor = color;
+
+        */
+        this.navigationbarColor = Color.BLACK;
         if (getPanelState() == SlidingUpPanelLayout.PanelState.COLLAPSED) {
             if (navigationBarColorAnimator != null) navigationBarColorAnimator.cancel();
             super.setNavigationbarColor(color);
@@ -279,7 +301,14 @@ public abstract class AbsSlidingMusicPanelActivity extends AbsMusicServiceActivi
     public void setTaskDescriptionColor(@ColorInt int color) {
         this.taskColor = color;
         if (getPanelState() == null || getPanelState() == SlidingUpPanelLayout.PanelState.COLLAPSED) {
+            // ~
+            /*
+            original:
+
             super.setTaskDescriptionColor(color);
+
+            */
+            super.setTaskDescriptionColor(0);
         }
     }
 

@@ -8,27 +8,33 @@
         android:title="@string/action_add_to_favorites"
         app:showAsAction="ifRoom" />
 
+    <!-- // ~ some items below are hidden, because I don't see them as necessary -->
+
     <item
         android:id="@+id/action_clear_playing_queue"
         android:orderInCategory="1"
         android:title="@string/action_clear_playing_queue"
-        app:showAsAction="never" />
+        app:showAsAction="never"
+        android:visible="false" />
 
     <item
         android:id="@+id/action_save_playing_queue"
         android:orderInCategory="1"
         android:title="@string/action_save_playing_queue"
-        app:showAsAction="never" />
+        app:showAsAction="never"
+        android:visible="false" />
 
     <item
         android:id="@+id/action_sleep_timer"
         android:orderInCategory="1"
         android:title="@string/action_sleep_timer"
-        app:showAsAction="never" />
+        app:showAsAction="never"
+        android:visible="false" />
 
     <item
         android:id="@+id/action_equalizer"
         android:orderInCategory="99"
         android:title="@string/equalizer"
-        app:showAsAction="never" />
+        app:showAsAction="never"
+        android:visible="false" />
 </menu>

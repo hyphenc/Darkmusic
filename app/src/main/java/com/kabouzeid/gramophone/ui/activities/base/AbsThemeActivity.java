@@ -64,23 +64,53 @@ public abstract class AbsThemeActivity extends ATHToolbarActivity {
     }
 
     public void setTaskDescriptionColor(@ColorInt int color) {
+        // ~
+        /*
+        original:
+
         ATH.setTaskDescriptionColor(this, color);
+
+        */
+        ATH.setTaskDescriptionColor(this, Color.BLACK);
     }
 
     public void setTaskDescriptionColorAuto() {
+        // ~
+        /*
+        original:
+
         setTaskDescriptionColor(ThemeStore.primaryColor(this));
+
+        */
+        setTaskDescriptionColor(Color.BLACK);
     }
 
     public void setNavigationbarColor(int color) {
+        // ~
+        /*
+
+        original:
+
         if (ThemeStore.coloredNavigationBar(this)) {
             ATH.setNavigationbarColor(this, color);
         } else {
             ATH.setNavigationbarColor(this, Color.BLACK);
         }
+
+        */
+        ATH.setNavigationbarColor(this, Color.BLACK);
     }
 
     public void setNavigationbarColorAuto() {
+        // ~
+        /*
+        original:
+
         setNavigationbarColor(ThemeStore.navigationBarColor(this));
+
+        */
+        setNavigationbarColor(Color.BLACK);
+
     }
 
     public void setLightStatusbar(boolean enabled) {

@@ -135,7 +135,14 @@ public class PlayerAlbumCoverFragment extends AbsMusicServiceFragment implements
         @Override
         public void onColorReady(int color, int requestCode) {
             if (currentPosition == requestCode) {
+                // ~
+                /*
+                original:
+
                 notifyColorChange(color);
+
+                 */
+                notifyColorChange(100);
             }
         }
     };

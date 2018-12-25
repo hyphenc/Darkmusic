@@ -59,4 +59,21 @@
         app:srcCompat="@drawable/ic_favorite_white_24dp"
         tools:ignore="ContentDescription,UnusedAttribute" />
 
+    <!-- 3 gradients to make to notification bar visible in card layout. !! "comment out" for flat layout !! // ~ -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/toolbar_gradient" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/toolbar_gradient" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/toolbar_gradient" />
+
 </FrameLayout>
