@@ -1,14 +1,25 @@
-# Phonograph
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/kabouzeid/Phonograph/blob/master/LICENSE.txt)
+# DarkPhonograph
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/hyphenc/DarkPhonograph/blob/master/LICENSE.txt)
 
-**A material designed local music player for Android.**
+**A Phonograph fork with stylistic modifications, namely a dark player interface.**
+You can find the changes I made by searching (Ctrl+Shift+F) for "// ~" in Android Studio, and see what I changed.
 
+All of this could probably be done a lot cleaner (etc.), but it works™
+
+## Additional Styling ##
+Heads up!
+If you do not use "Card Layout", remove the three <view... items under the comment in the file DarkPhonograph/app/src/main/res/layout/fragment_player_album_cover.xml, to remove the gradients on the album cover.
+I added those to make the notification icons visible again on white-ish covers when using the Card layout.
+
+I recommend these settings:
+```
+Colors>General theme>Black (AMOLED)
+Colors>Primary color>Custom>#000000 (->black) //should be set by default
+Colors>Accent color>Custom>#FFFFFF  (->white) //should be set by default
+```
+I also recommed having just one library tab, for example "Playlists", because when you have only one library tab, the tab view will be hidden.
+
+---
+
+Screenshot from kabouzeid/Phonograph:
 ![Screenshots](./art/art.jpg?raw=true)
-
-<a href="https://play.google.com/store/apps/details?id=com.kabouzeid.gramophone">
-  <img height="50" alt="Get it on Google Play"
-      src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" />
-</a>
-
-
-
