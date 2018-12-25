@@ -33,7 +33,7 @@ import de.psdev.licensesdialog.LicensesDialog;
 @SuppressWarnings("FieldCanBeLocal")
 public class AboutActivity extends AbsBaseActivity implements View.OnClickListener {
 
-    private static String GITHUB = "https://github.com/kabouzeid/Phonograph";
+    private static String GITHUB = "https://github.com/hyphenc/DarkPhonograph";
 
     private static String GOOGLE_PLUS = "https://google.com/+KarimAbouZeid23697";
     private static String TWITTER = "https://twitter.com/karimjabouzeid";
