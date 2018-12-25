@@ -9,14 +9,13 @@ All of this could probably be done a lot cleaner (etc.), but it works™
 
 ## Additional Styling ##
 Heads up!
-If you do not use "Card Layout", remove the three <view... items under the comment in the file DarkPhonograph/app/src/main/res/layout/fragment_player_album_cover.xml, to remove the gradients on the album cover.
-I added those to make the notification icons visible again on white-ish covers when using the Card layout.
+I added three gradients in the file app/src/main/res/layout/fragment_player_album_cover.xml to make the notification icons visible again on white-ish covers when using the Card layout. However these will still show up on "Flat Layout", so pay attention to what version you download.
 
-I recommend these settings:
+I recommend these settings: (should all be default)
 ```
-Colors>General theme>Black (AMOLED)           //should be set by default
-Colors>Primary color>Custom>#000000 (->black) //should be set by default
-Colors>Accent color>Custom>#FFFFFF  (->white) //should be set by default
+Colors>General theme>Black (AMOLED)
+Colors>Primary color>Custom>#000000 (->black)
+Colors>Accent color>Custom>#FFFFFF  (->white)
 ```
 I also recommed having just one library tab, for example "Playlists", because when you have only one library tab, the tab view will be hidden.
 

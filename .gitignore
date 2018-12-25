@@ -1,6 +1,7 @@
 ### Android ###
 # Built application files
 app/releases/output.json
+output.json
 *.apk
 *.ap_
 
