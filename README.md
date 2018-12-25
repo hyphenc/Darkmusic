@@ -14,11 +14,14 @@ I added those to make the notification icons visible again on white-ish covers w
 
 I recommend these settings:
 ```
-Colors>General theme>Black (AMOLED)
+Colors>General theme>Black (AMOLED)           //should be set by default
 Colors>Primary color>Custom>#000000 (->black) //should be set by default
 Colors>Accent color>Custom>#FFFFFF  (->white) //should be set by default
 ```
 I also recommed having just one library tab, for example "Playlists", because when you have only one library tab, the tab view will be hidden.
+
+## Download ##
+You can download the latest version here
 
 ## Screenshots ##
 <img src="./art/player.png" alt="player" width="200"/> <img src="./art/playlist-view.png" alt="playlist view" width="200"/> <img src="./art/sidebar.png" alt="sidebar" width="200"/> <img src="./art/tag-editor.png" alt="tag editor" width="200"/>
