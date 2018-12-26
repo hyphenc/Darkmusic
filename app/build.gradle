@@ -55,7 +55,7 @@ android {
         renderscriptTargetApi 27
         vectorDrawables.useSupportLibrary = true
 
-        applicationId 'com.kabouzeid.darkmusic'
+        applicationId 'com.hyphenc.darkmusic'
         versionCode 167
         versionName '1.2.0'
     }
