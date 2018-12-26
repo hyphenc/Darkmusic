@@ -55,7 +55,7 @@ android {
         renderscriptTargetApi 27
         vectorDrawables.useSupportLibrary = true
 
-        applicationId 'com.kabouzeid.gramophone'
+        applicationId 'com.kabouzeid.darkmusic'
         versionCode 167
         versionName '1.2.0'
     }
@@ -74,10 +74,6 @@ android {
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
-        }
-        debug {
-            applicationIdSuffix '.debug'
-            versionNameSuffix ' DEBUG (' + gitBranch() + ')'
         }
     }
     packagingOptions {
