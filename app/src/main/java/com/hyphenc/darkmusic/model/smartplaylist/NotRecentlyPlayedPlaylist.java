@@ -7,6 +7,7 @@ import android.support.annotation.NonNull;
 import com.hyphenc.darkmusic.R;
 import com.hyphenc.darkmusic.loader.TopAndRecentlyPlayedTracksLoader;
 import com.hyphenc.darkmusic.model.Song;
+import com.hyphenc.darkmusic.util.PreferenceUtil;
 
 import java.util.ArrayList;
 
@@ -17,6 +18,16 @@ public class NotRecentlyPlayedPlaylist extends AbsSmartPlaylist {
 
     public NotRecentlyPlayedPlaylist(@NonNull Context context) {
         super(context.getString(R.string.not_recently_played), R.drawable.ic_watch_later_white_24dp);
+    }
+
+    @NonNull
+    @Override
+    public String getInfoString(@NonNull Context context) {
+        String baseInfo = super.getInfoString(context);
+        String cutoff = PreferenceUtil.getInstance(context).getRecentlyPlayedCutoffText(context);
+
+        if (baseInfo.isEmpty()) {return cutoff;}
+        return cutoff + INFO_STRING_SEPARATOR + baseInfo;
     }
 
     @NonNull

@@ -56,8 +56,8 @@ android {
         vectorDrawables.useSupportLibrary = true
 
         applicationId 'com.hyphenc.darkmusic'
-        versionCode 168
-        versionName '1.1'
+        versionCode 169
+        versionName '1.1.1'
     }
     signingConfigs {
         release {
@@ -138,6 +138,6 @@ dependencies {
     implementation('com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.11.0@aar') {
         transitive = true
     }
-    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }

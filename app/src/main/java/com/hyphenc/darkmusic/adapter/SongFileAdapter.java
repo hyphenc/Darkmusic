@@ -20,7 +20,8 @@ import com.hyphenc.darkmusic.adapter.base.AbsMultiSelectAdapter;
 import com.hyphenc.darkmusic.adapter.base.MediaEntryViewHolder;
 import com.hyphenc.darkmusic.glide.audiocover.AudioFileCover;
 import com.hyphenc.darkmusic.interfaces.CabHolder;
-import com.hyphenc.darkmusic.util.Util;
+import com.hyphenc.darkmusic.util.ImageUtil;
+
 import com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView;
 
 import java.io.File;
@@ -116,7 +117,7 @@ public class SongFileAdapter extends AbsMultiSelectAdapter<SongFileAdapter.ViewH
             holder.image.setColorFilter(iconColor, PorterDuff.Mode.SRC_IN);
             holder.image.setImageResource(R.drawable.ic_folder_white_24dp);
         } else {
-            Drawable error = Util.getTintedVectorDrawable(activity, R.drawable.ic_file_music_white_24dp, iconColor);
+            Drawable error = ImageUtil.getTintedVectorDrawable(activity, R.drawable.ic_file_music_white_24dp, iconColor);
             Glide.with(activity)
                     .load(new AudioFileCover(file.getPath()))
                     .diskCacheStrategy(DiskCacheStrategy.NONE)

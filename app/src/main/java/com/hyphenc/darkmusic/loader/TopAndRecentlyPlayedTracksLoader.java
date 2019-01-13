@@ -26,7 +26,6 @@ import android.support.annotation.Nullable;
 import com.hyphenc.darkmusic.model.Song;
 import com.hyphenc.darkmusic.provider.HistoryStore;
 import com.hyphenc.darkmusic.provider.SongPlayCountStore;
-
 import com.hyphenc.darkmusic.util.PreferenceUtil;
 
 import java.util.ArrayList;
@@ -44,7 +43,7 @@ public class TopAndRecentlyPlayedTracksLoader {
 (@NonNull Context context) {
         ArrayList<Song> allSongs = SongLoader.getSongs(
             SongLoader.makeSongCursor(
-                context, 
+                context,
                 null, null,
                 MediaStore.Audio.Media.DATE_ADDED + " ASC"));
 
