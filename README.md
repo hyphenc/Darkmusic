@@ -3,6 +3,8 @@
 
 **A Phonograph fork with stylistic modifications, namely a dark player interface.**
 
+:warning: **NO LONGER MAINTAINED** :warning: (app is stable up to Android 10)
+
 All of this could probably be done a lot cleaner (etc.), but it works™
 
 ## Download ##
